@@ -1,0 +1,87 @@
+.release-content{
+    width: 100%;
+    min-height: 100vh;
+    background: #ffffff;
+}
+.release-header{
+   width: 100%;
+   height: 1.02rem;
+   padding:0 0.3rem;
+   justify-content: space-between;
+}
+.release-header .close-icon{
+   width: 0.32rem;
+   height: 0.32rem;
+}
+.release-header .button{
+    width:1.12rem;
+    height:0.64rem;
+    line-height:0.64rem;
+    text-align: center;
+    background:rgba(0,162,255,1);
+    border-radius:4px;
+    font-size:0.32rem;
+    font-family:PingFang-SC-Bold;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+}
+textarea{
+    width:100%;
+    height: auto;
+    font-size:0.36rem;
+    font-family:PingFang-SC-Medium;
+    font-weight:500;
+    color:rgba(187,187,187,1);
+    line-height:0.34rem;
+    border: none;
+    padding:0.3rem;
+}
+.article-imgbox{
+  width:100%;
+  padding:0 0.3rem;
+  flex-wrap: wrap;
+}
+.article-item{
+  width:2.14rem;
+  height:2.14rem;
+  border-radius:10px;
+  border:1px solid #eee;
+  margin-right: 0.26rem;
+  margin-bottom: 0.26rem;
+  position: relative;
+}
+.article-item .article-item-close{
+  width: 0.44rem;
+  height: 0.44rem;
+  position: absolute;
+  top:-0.15rem;
+  right:-0.15rem;
+}
+.article-item-add{
+  border:3px dotted rgba(199,199,199,1);
+  justify-content: center;
+  background: none;  
+}
+.article-item-add .img-add{
+  width:0.68rem;
+  height:0.68rem;
+}
+.file-btn{
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  opacity: 0;
+}
+.article-item-img{
+  width:100%;
+  height: auto;
+}
+.article-item .article-item-box{
+  width: 100%;
+  height: 100%;
+  border-radius:4px;
+  overflow: hidden;
+}

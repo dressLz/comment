@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <script src="src/js/rem.js"></script>
+    <link href="https://cdn.bootcss.com/Swiper/4.5.0/css/swiper.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/circle.css">
+    <style>
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="box box">
+        <div class="video-audio box">
+        </div>
+    </header>
+    <article>
+        <div class="main-words box display">
+            <span>“中”字的写法</span>
+            <div class="collection-box">
+                <img src="./src/img/shoucang.png" class="collection">
+                <span>收藏</span>
+            </div>
+        </div>
+        <div class="swiper-container small">
+            <div class="swiper-wrapper box">
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+                <div class="swiper-slide display">中</div>
+            </div>
+        </div>
+    </article>
+    <div class="aLink"></div>
+    <main class="content-circle box">
+        <div class="circle-header display box">
+            <span>作品圈</span>
+            <div class="clockIn display">
+                <img src="./src/img/daka.png" alt="">
+                <span>打卡</span>
+            </div>
+        </div>
+        <div class="swiper-container large">
+            <div class="swiper-wrapper swiper-wrapper-work box">
+                <div class="swiper-slide swiper-slide-works display">中</div>
+                <div class="swiper-slide swiper-slide-works display">中</div>
+                <div class="swiper-slide swiper-slide-works display">中</div>
+                <div class="swiper-slide swiper-slide-works display">中</div>
+                <div class="swiper-slide swiper-slide-works display">中</div>
+                <div class="swiper-slide swiper-slide-works display">中</div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        let windowWidth = $('body').css('width'),
+            margin = 100 * (parseFloat(windowWidth) / 750) * 0.2;
+        var swiper = new Swiper('.small', {
+            slidesPerView: 7,
+            spaceBetween: margin,
+            freeMode: true
+        });
+        new Swiper('.large', {
+            slidesPerView: 2,
+            spaceBetween: margin,
+            freeMode: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
